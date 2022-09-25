@@ -1,27 +1,12 @@
-This is a rust template that can be used to quickstart any rust project.
-Things are set here based on personal preference of the [author](https://github.com/rctrj)
+This repository shows how to create a repository to store protos for rust projects that use [Tonic](https://github.com/hyperium/tonic) with [Prost](https://github.com/tokio-rs/prost).
 
-Integrations:
-1. Cargo
-2. Branch Name Validation
-3. Commit Title Validation using [commitlint](https://github.com/conventional-changelog/commitlint)
-4. Rust Fmt settings
+What happens here:
+- `build.rs` generates stubs for all proto files present in `pb` folder
+- `lib.rs` exports all the protos into a mod
 
-Todos:
-* [ ] CI
-* [ ] CD
-* [ ] Commit Template
-* [ ] Run RustFMT pre-commit
+This can then be used as a crate for accessing proto files.
+___
 
----
-## Initial Setup ##
-This project requires you to run a few commands before you can work in this.
-Please note that skipping this might result in your commits and branches getting rejected upon push.
-
-The following steps require that you have brew install in your system
-Steps:
-1. Goto: tools/git
-2. Give permission to `init_setup.sh` using `chmod +x init_setup.sh`
-3. Run `init_setup.sh`
-
-This should create a `.husky` folder which is used for commit validation
+## Credits
+- `build.rs` is copied from `https://gist.github.com/aquarhead/69092f21347353981357909bea7765e4`
+All credit to author: [aquarhead](https://gist.github.com/aquarhead)
