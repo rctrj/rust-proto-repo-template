@@ -8,5 +8,5 @@ This can then be used as a crate for accessing proto files.
 ___
 
 ## Credits
-- `build.rs` is copied from `https://gist.github.com/aquarhead/69092f21347353981357909bea7765e4`
+- `build.rs` is copied from [here](https://gist.github.com/aquarhead/69092f21347353981357909bea7765e4)
 All credit to author: [aquarhead](https://gist.github.com/aquarhead)
