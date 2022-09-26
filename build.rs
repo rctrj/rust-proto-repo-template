@@ -51,7 +51,6 @@ fn main() -> Res {
     }
 
     tonic_build::configure()
-        .build_server(false)
         .compile(&protos, &[Path::new(INCLUDE_DIR)])?;
 
     write_protos_rs(pkgs)?;
